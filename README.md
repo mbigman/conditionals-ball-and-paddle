@@ -138,7 +138,7 @@ I would start by sort of ignoring where the paddle is and just change the direct
 
 ![y bounce](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/labs/y-bounce.gif)
 
-Once you get that, the next step is to say if the ball is past the paddle vertically AND it's where the paddle is horizontally. We can use the logical operator `&&`.
+Once you get that, the next step is to say the ball should reverse if it's is past the paddle vertically **AND** *it's where the paddle is horizontally*. We can use the logical operator `&&`.
 
 Translate this into real code, it's totally ok to write the conditional across multiple lines:
 ```
@@ -150,6 +150,8 @@ if (the ball's y is greater than the paddle &&
     }
 
 ```
+
+A tip: The paddle's right edge would be wherever `mouseX` is plus half the paddle's width.
 
 After that works you just need to add in the logic for bouncing off the TOP, LEFT, and RIGHT walls (not the bottom) and you're good to go!
 
@@ -165,6 +167,8 @@ There are many things we could do to make the gameplay more fun and have a bette
 - In the real Breakout game you have some control over how you redirect the ball with your paddle, if you hit it with the left third of the paddle you can direct the ball leftwards, if you hit with the right third you can make sure it travels to the right. Try to implement this.
 
 - The player could get points every time they hit the ball with the paddle. Look up the `text()` function to use to display the score.
+
+- What if you could increase the difficulty of the game. What if the ball moved faster every time it hit the paddle? Or after every 10 hits it increased by a lot?
 
 - Once we cover loops we'll be able to do a much better job of adding multiple bricks that the player can break with the ball. For now you could try adding a single brick that breaks if the ball hits it.
 
