@@ -1,1 +1,1 @@
-# conditionals-ball-and-paddle
+# Conditionals: Ball and Paddle
